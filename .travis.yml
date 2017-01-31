@@ -15,6 +15,7 @@ rvm:
   - 2.1.2
   - 2.2.2
   - 2.3.0
+  - 2.4.0
   - jruby-19mode
 gemfile:
   - Gemfile
@@ -54,5 +55,7 @@ matrix:
       gemfile: gemfiles/Gemfile.ruby1.9.3
     - rvm: jruby-19mode
       gemfile: gemfiles/Gemfile.rails5.0
+    - rvm: 2.4.0
+      gemfile: gemfiles/Gemfile.ruby1.9.3
     - env: DB=sqlite USE_SQLITE_EXT=1
       rvm: jruby-19mode
