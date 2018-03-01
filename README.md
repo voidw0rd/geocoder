@@ -460,6 +460,18 @@ The [Google Places Search API](https://developers.google.com/places/web-service/
 
 * Same specifications as Google Places Details (see above).
 
+#### Google Places Nearby Search (`:google_places_nearby_search`)
+
+The [Google Places Nearby Search API](https://developers.google.com/places/web-service/search#PlaceSearchRequests) is the geocoding service of Google Places API. Same as `:google_places_search` it returns a limited set of location data. But the difference is `:google_places_nearby_search` uses the `nearbysearch` endpoint.
+
+Limit the result set to a strictly bound radius by passing the `:radius` optional parameter 
+
+```Geocoder.search(keyword, lookup: :google_places_nearby_search, params: { radius: 50000, location: "40.785091,-73.968285" })```
+
+* Same specifications as Google Places Details (see above).
+
+
+
 #### Bing (`:bing`)
 
 * **API key**: required (set `Geocoder.configure(:lookup => :bing, :api_key => key)`)

@@ -30,6 +30,7 @@ module Geocoder
         :google_premier,
         :google_places_details,
         :google_places_search,
+        :google_places_nearby_search,
         :bing,
         :geocoder_ca,
         :geocoder_us,
